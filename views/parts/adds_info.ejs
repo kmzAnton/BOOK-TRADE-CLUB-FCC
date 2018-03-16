@@ -1,0 +1,42 @@
+<div class="inner">
+  
+  <div class="form-group row">
+    <label for="infoName" class="col-sm-2 col-form-label">Name</label>
+    <div class="col-sm-10">
+      <input type="text" readonly class="form-control" id="infoName" value="<%=info.username%>">
+    </div>
+  </div>
+  
+  <div class="form-group row">
+    <label for="infoEmail" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="text" readonly class="form-control" id="infoEmail" value="<%=info.email%>">
+    </div>
+  </div>
+  
+  <div class="form-group row">
+    <label for="infoCity" class="col-sm-2 col-form-label">City</label>
+    <div class="col-sm-10">
+      <input type="text" readonly class="form-control" id="infoCity" value="<%=info.city%>">
+    </div>
+  </div>
+  
+  <div class="form-group row">
+    <label for="infoRegion" class="col-sm-2 col-form-label">Region</label>
+    <div class="col-sm-10">
+      <input type="text" readonly class="form-control" id="infoRegion" value="<%=info.region%>">
+    </div>
+  </div>
+  
+  <div class="form-group row">
+    <label for="infoCountry" class="col-sm-2 col-form-label">Country</label>
+    <div class="col-sm-10">
+      <input type="text" readonly class="form-control" id="infoCountry" value="<%=info.country%>">
+    </div>
+  </div>
+  
+   <div class="row justify-content-end">
+     <button class="btn btn-sm btn-outline-success hidden" id="saveBtn"><i class="fa fa-md fa-save"></i>  Save</button>
+     <button class="btn btn-sm btn-outline-primary" id="editBtn"><i class="fa fa-md fa-cog"></i>  Edit</button>  
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<div class="topper d-flex justify-content-between">
+  <a href="/"><div class="p-2"><i class="fa fa-lg fa-book"></i>   Book Club</div></a>
+  
+  
+  <%if(info.username!==undefined){%>
+    <div class="mr-auto p-2" id="<%=info.userId%>"><i class="fa fa-lg fa-user"></i>   Hi <b><%= info.username%>!</b></div>
+  <%}else{%>
+    <div class="mr-auto p-2" id="">Hi !</div>
+  <%}%>
+  
+  <%if(info.username==undefined){%>
+    <%include ../parts/login_modal.ejs%>
+    <%include ../parts/signup_modal.ejs%>
+  <%}else{%>
+    <a href="/office"class="p-2" id="office"><i class="fa fa-lg fa-briefcase"></i></a>
+    <a href="/logout"><div class="p-2 different"><i class="fa fa-lg fa-sign-out-alt"></i>    Log out</div></a>
+  <%}%>
+</div>

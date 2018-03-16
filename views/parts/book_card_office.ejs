@@ -1,0 +1,32 @@
+<% books.forEach(item=>{ %>
+
+  <div class="col-sm-3">
+    <div class="card" id="<%=item.volumeId%>">
+      <a href="<%=item.link%>" target="_blank"><img class="card-img-top" src="<%=item.image%>" alt="Card image cap"></a>
+      
+      
+      <div class="card-body">
+        <h6 class="card-title">Title: <%=item.name%></h6>
+        <p class="card-text"><b>Author:</b> <%=item.author%></p>
+        <p class="card-text"><b>Description:</b> <%=item.short_desc%></p>
+        <p class="card-text"><b>Category:</b> <%=item.category%></p>
+        
+        
+        <%if(info.username!==undefined){%>
+          <%if(item.addedBy == info.userId){%>
+            <%if(item.onTrade){%>
+              <button class="btn btn-sm btn-block btn-outline-success onTrade"><i class="fa fa-lg fa-check"></i>  on Trade</button>
+            <%}else{%>
+              <button class="btn btn-sm btn-block btn-outline-success onTrade"><i class="fa fa-lg fa-shopping-basket"></i>   Trade</button>
+            <%}%>
+          <%}else{%>
+            <button class="btn btn-sm btn-block btn-outline-warning"><i class="fa fa-lg fa-shopping-basket"></i>   Request</button>
+          <%}%>
+        <%}%>   
+        
+        
+      </div>
+    </div>
+  </div>
+
+<%})%>

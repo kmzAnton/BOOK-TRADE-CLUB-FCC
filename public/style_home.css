@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+  background-color: #EBF5FB;
+  font-family: 'Roboto', sans-serif;
+}
+.green{
+  color: green;
+}
+.red{
+  color: tomato;
+}
+.collapse .card{
+  padding: 8px 10px;
+}
+.trade{
+  color: red;
+  top:10px;
+  left: 10px;
+  background-color: lightgray;
+  padding:3px 10px;
+  opacity: 0.85;
+  border-radius: 4px;
+  position:absolute;
+/*   float:right; */
+}
+#office{
+  margin-top: 2px;
+  border:none;
+}
+.hidden {
+  display: none;
+}
+.buttons .col-sm-4 a:hover{
+  text-decoration: none !important;
+}
+.modal{
+  color: black;
+}
+#exampleModalSignup .form-group{
+  font-size: 15px;
+}
+.adds .col-sm-4{
+  padding: 10px   5px
+}
+.inner{
+  width: 100%;
+  border: 1px dotted lightsteelblue;
+  padding: 10px 15px;
+  font-size: 13px;
+}
+.inner .btn-sm{
+  margin-right: 5px;
+/*   width:30% !important; */
+}
+.justify-content-end .btn-outline-primary{
+  font-size: 15px;
+  padding: 2px 25px;
+  border-radius: 2px;
+}
+.card{
+  padding: 10px;
+}
+.card-body{
+  padding: 0px;
+}
+.card-body a{
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 2px;
+}
+.card-text{
+  font-size: 12px;
+}
+.my_books .col-sm-3{
+  padding: 10px;
+}
+.my_books .col-sm-3 img{
+  max-height: 250px;
+}
+.justify-content-end{
+  font-size:12px;
+  margin:0px;
+}
+.btn{
+  border-radius: 1px;
+}
+.btn-info{
+  background-color: steelblue;
+  border:none;
+}
+.btn-info:hover{
+  background-color: lightsteelblue;
+  border-bottom: 2px solid steelblue;
+  padding-bottom:2px;
+}
+.btn:focus{
+  background-color: lightsteelblue !important;
+  box-shadow: none !important;
+}
+.btn:active{
+  border: none;
+}
+.middle{
+  padding: 20px 25px;
+  background-color: white;
+  border: 1px solid #F5F5F5;
+  border-radius: 1px;
+  -webkit-box-shadow: 1px 1px 6px 0px rgba(230,230,230,1);
+  -moz-box-shadow: 1px 1px 6px 0px rgba(230,230,230,1);
+  box-shadow: 1px 1px 6px 0px rgba(230,230,230,1);
+  border-top: 5px solid steelblue;
+}
+hr{
+  border: 1px solid #F5F5F5;
+  width: 95%;  
+}
+.topper{
+  background-color: steelblue;
+  padding:8px 25px;
+  color: white;
+  font-size: 12px;
+  margin-bottom: 35px;
+}
+.topper a{
+  text-decoration: none !important;
+  color:white;
+}
+.topper a:hover{
+  color:white;
+  text-decoration: none !important;
+}
+.different{
+  border: 1px dotted white !important;  
+}
+.p-2{
+  margin-right: 5px;
+  padding:3px 15px !important  ;
+  border: 1px dotted white;
+  border-radius: 1px;
+}
+.p-2:first-child{
+  border:none;
+  border-right:1px dotted white;
+  padding-top: 5px !important;
+}
+.p-2:last-child{
+  margin-right:0px;
+}
+.mr-auto{
+  border: none;
+  padding-top: 5px !important;
+}
+.container-fluid{
+  padding:0;
+  margin:0;
+}
+.container-fluid > .row{
+  margin:0;
+  padding:0;
+}

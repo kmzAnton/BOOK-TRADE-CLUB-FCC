@@ -1,0 +1,84 @@
+<div class="row">
+  
+  <div class="col-sm-2 side">
+
+  </div>
+
+
+  <div class="col-sm-8 middle rounded-top">
+      <div class="row my_books">
+        <%include ../parts/book_card_office.ejs%>
+      </div>
+      <div class="row justify-content-end">
+      </div>
+
+
+      <hr>
+      <div class="row buttons">
+        <div class="col-sm-4">
+          <a href="/add_book"><button class="btn btn-sm btn-block btn-info">Add new book</button></a> 
+        </div>
+        <div class="col-sm-4">
+          
+          <button class="btn btn-sm btn-block btn-info" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Your requests <span class="badge badge-light"><%=requests.yours.length%></span></button>
+          <div class="collapse" id="collapseExample">
+            
+            
+            <%requests.yours.forEach(item=>{%>
+              <div class="d-flex" id="<%=item.reqId%>">
+                <%if(item.isAccepted){%>
+                  <div class="mr-auto p-2"><%=item.bookName%></div>    <div class="p-2"><i class="fa fa-lg fa-handshake green"></i></div>
+                <%}%>
+                  <div class="mr-auto p-2"><%=item.bookName%></div>    <div class="p-2 yours"><i class="fa fa-lg fa-times red"></i></div>
+              </div>
+            <%})%>
+            
+            
+          </div>
+          
+        </div>
+        <div class="col-sm-4">
+          <button class="btn btn-sm btn-block btn-info to_you" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">Requests to you <span class="badge badge-light"><%=requests.toYou.length%></span></button>
+          <div class="collapse" id="collapseExample1">
+            
+            
+            <%requests.toYou.forEach(item=>{%>
+              <div class="d-flex" id="<%=item.reqId%>">
+                <div class="mr-auto p-2"><%=item.bookName%></div>
+                <%if(item.isAccepted){%>
+                  <div class="p-2 toYou_check"><i class="fa fa-lg fa-handshake green"></i></div>
+                <%}else{%>
+                  <div class="p-2 toYou_check"><i class="fa fa-lg fa-check green "></i></div>
+                <%}%>
+                <div class="p-2 yours"><i class="fa fa-lg fa-times red"></i></div>
+              </div>
+            <%})%>
+            
+            
+          </div>
+          
+          
+        </div>
+      </div>
+      <br>
+
+
+      <div class="row adds">
+      <div class="col-sm-4 info">
+        <%include ../parts/adds_info.ejs%>
+      </div>
+      <div class="col-sm-4 stat">
+        <%include ../parts/adds_stat.ejs%>
+      </div>
+      <div class="col-sm-4 anek">
+        <%include ../parts/adds_anek.ejs%>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-sm-2 side">
+
+  </div>
+
+</div>
