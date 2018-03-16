@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.fa-handshake{
+  color: red;
+}
+#office{
+  margin-top: 2px;
+  border:none;
+}
+.hidden{
+  display: none;
+}
+.trade{
+  color: red;
+  top:10px;
+  left: 10px;
+  background-color: lightgray;
+  padding:10px 15px;
+  opacity: 0.75;
+  border-radius: 4px;
+  position:absolute;
+/*   float:right; */
+}
+.add{
+  color: white !important;
+}
+body{
+  background-color: #EBF5FB;
+  font-family: 'Roboto', sans-serif;
+}
+.topper a{
+  text-decoration: none !important;
+  color:white;
+}
+.topper a:hover{
+  color:white;
+  text-decoration: none !important;
+}
+.searchResult img{
+  max-height: 200px;
+}
+.searchResult .col-sm-4{
+  margin-bottom: 5px;
+}
+input {
+  margin-bottom: 10px;
+}
+.topper{
+  background-color: steelblue;
+  padding:8px 25px;
+  color: white;
+  font-size: 12px;
+  margin-bottom: 35px;
+}
+.p-2{
+  margin-right: 5px;
+  padding:3px 15px !important  ;
+  border: 1px dotted white;
+  border-radius: 1px;
+}
+.p-2:first-child{
+  border:none;
+  border-right:1px dotted white;
+  padding-top: 5px !important;
+}
+.p-2:last-child{
+  margin-right:0px;
+}
+.mr-auto{
+  border: none;
+  padding-top: 5px !important;
+}
+.searchResult{
+  font-size: 12px;
+  padding: 20px 0px;
+  margin:0;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  background-color: white;
+  width: 100%;
+  min-height:200px; 
+}
+.searchResult a{
+  margin-right: 5px;
+}
+.modal{
+  color: black;
+}
+#exampleModalSignup .form-group{
+  font-size: 15px;
+}

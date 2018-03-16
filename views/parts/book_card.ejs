@@ -1,0 +1,29 @@
+<% books.forEach(item=>{ %>
+
+  <div class="col-sm-3">
+    <div class="card" id="<%=item.volumeId%>">
+      <img class="card-img-top" src="<%=item.image%>" alt="Card image cap">
+      
+      <%if(info.username){%>
+        <%if(info.userId!==item.addedBy){%>
+          <%if(item.onTrade){%>
+            <%if(item.addedBy == info.userId){%>
+              <div class="trade"><i class="fa fa-lg fa-handshake"></i></div>
+            <%}else{%>
+              <div class="trade" disabled><i class="fa fa-lg fa-handshake"></i></div>
+            <%}%>
+          <%}else{%>
+            <div class="trade hidden"><i class="fa fa-lg fa-handshake"></i></div>
+          <%}%>
+        <%}%>
+      <%}%>
+      
+      <div class="card-body">
+        <h6 class="card-title">Title: <%=item.name%></h6>
+        <p class="card-text">Author: <%=item.author%></p>         
+        
+      </div>
+    </div>
+  </div>
+
+<%})%>

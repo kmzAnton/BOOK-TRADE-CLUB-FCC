@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%include ../partials/head.ejs%>
+    <link rel="stylesheet" href="/style_add_new.css">
+  </head>
+  <body>
+    <%include ../partials/topper.ejs%>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 side">
+
+        </div>
+        
+        <div class="col-sm-6 add_new">
+          <div class="row inputs">
+            <input autofocus type="text" class="form-control" name="bookName" placeholder="Book name..." id="bookName"><br>
+            <input type="text" class="form-control" name="authorName" placeholder="Book author..." id="authorName"><br>
+          </div>
+          <div class="row">
+            
+            <button class="btn btn-success" id="findBook"><i class="fa fa-sm fa-search"></i>  Find</button>
+          </div>
+          <br>
+          <div class="row searchResult">
+            
+          </div>
+        </div>
+        
+        <div class="col-sm-3 side">
+
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/client_add_book.js"></script>
+  </body>
+</html>
